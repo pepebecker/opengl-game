@@ -7,20 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B11C038F1C89F09B00E4ED7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C038E1C89F09B00E4ED7A /* AppDelegate.m */; };
-		B11C03921C89F09B00E4ED7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C03911C89F09B00E4ED7A /* main.m */; };
-		B11C03941C89F09B00E4ED7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B11C03931C89F09B00E4ED7A /* Assets.xcassets */; };
-		B11C03971C89F09B00E4ED7A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11C03951C89F09B00E4ED7A /* MainMenu.xib */; };
+		B1003D941C89FC9F000CCAC8 /* DisplayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1003D921C89FC9F000CCAC8 /* DisplayManager.cpp */; };
+		B11AD9AA1C8AFDB700B1804D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B11AD9A91C8AFDB700B1804D /* OpenGL.framework */; };
+		B11AD9AD1C8B041500B1804D /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B11AD9AB1C8B041500B1804D /* Shader.cpp */; };
+		B11C039F1C89F0D400E4ED7A /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B11C039E1C89F0D400E4ED7A /* Game.cpp */; };
+		B11C03A11C89F11B00E4ED7A /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B11C03A01C89F11B00E4ED7A /* libglfw3.3.1.dylib */; };
+		B12323D81C903738008671F7 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12323D61C903738008671F7 /* Block.cpp */; };
+		B1298F9F1C9357D200F43064 /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1298F9D1C9357D200F43064 /* Ray.cpp */; };
+		B13165A91C94E74C00F0E5F9 /* libfreeimage.3.17.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B13165A81C94E74C00F0E5F9 /* libfreeimage.3.17.0.dylib */; };
+		B13165AB1C94E78000F0E5F9 /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B13165AA1C94E78000F0E5F9 /* libGLEW.1.13.0.dylib */; };
+		B148EEE31C8DA2A2004C58FA /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B148EEE11C8DA2A2004C58FA /* Entity.cpp */; };
+		B148EEE91C8DBE8D004C58FA /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B148EEE71C8DBE8D004C58FA /* Renderer.cpp */; };
+		B148EEEB1C8DC2E7004C58FA /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B148EEEA1C8DC2E7004C58FA /* Utils.cpp */; };
+		B16019ED1C8DD47C004C0E6B /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B16019EB1C8DD47C004C0E6B /* Camera.cpp */; };
+		B17EC6E31C9C972400F4D469 /* GuiRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B17EC6E11C9C972400F4D469 /* GuiRenderer.cpp */; };
+		B189591C1C99F7EB00A5E0E9 /* Crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = B189591B1C99F7EB00A5E0E9 /* Crosshair.png */; };
+		B18959221C99F9C400A5E0E9 /* GUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B18959201C99F9C400A5E0E9 /* GUI.cpp */; };
+		B18959251C9A068200A5E0E9 /* GUIShader.fs in Resources */ = {isa = PBXBuildFile; fileRef = B18959231C9A068200A5E0E9 /* GUIShader.fs */; };
+		B18959261C9A068200A5E0E9 /* GUIShader.vs in Resources */ = {isa = PBXBuildFile; fileRef = B18959241C9A068200A5E0E9 /* GUIShader.vs */; };
+		B1B86BFF1C92E2550060266E /* MousePicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B86BFD1C92E2550060266E /* MousePicker.cpp */; };
+		B1C8C50D1C8A4DFD00B87C32 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C50B1C8A4DFD00B87C32 /* Model.cpp */; };
+		B1C8C5171C8A6D2C00B87C32 /* ModelShader.fs in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C5151C8A6D2C00B87C32 /* ModelShader.fs */; };
+		B1C8C5181C8A6D2C00B87C32 /* ModelShader.vs in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C5161C8A6D2C00B87C32 /* ModelShader.vs */; };
+		B1E0FD021C8E2CAA00F0AC21 /* Crate.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E0FD001C8E2CAA00F0AC21 /* Crate.png */; };
+		B1E0FD031C8E2CAA00F0AC21 /* Wood.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E0FD011C8E2CAA00F0AC21 /* Wood.png */; };
+		B1E0FD071C8E51F000F0AC21 /* Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1E0FD051C8E51F000F0AC21 /* Loader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1003D921C89FC9F000CCAC8 /* DisplayManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayManager.cpp; sourceTree = "<group>"; };
+		B1003D931C89FC9F000CCAC8 /* DisplayManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DisplayManager.hpp; sourceTree = "<group>"; };
+		B11AD9A91C8AFDB700B1804D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B11AD9AB1C8B041500B1804D /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		B11AD9AC1C8B041500B1804D /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		B11C038A1C89F09B00E4ED7A /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B11C038D1C89F09B00E4ED7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B11C038E1C89F09B00E4ED7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B11C03911C89F09B00E4ED7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B11C03931C89F09B00E4ED7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B11C03961C89F09B00E4ED7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B11C03981C89F09B00E4ED7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B11C039E1C89F0D400E4ED7A /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		B11C03A01C89F11B00E4ED7A /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = /usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<absolute>"; };
+		B12323D61C903738008671F7 /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		B12323D71C903738008671F7 /* Block.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		B1298F9D1C9357D200F43064 /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray.cpp; sourceTree = "<group>"; };
+		B1298F9E1C9357D200F43064 /* Ray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ray.hpp; sourceTree = "<group>"; };
+		B13165A81C94E74C00F0E5F9 /* libfreeimage.3.17.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreeimage.3.17.0.dylib; path = ../../../../../../../usr/local/Cellar/freeimage/3.17.0/lib/libfreeimage.3.17.0.dylib; sourceTree = "<group>"; };
+		B13165AA1C94E78000F0E5F9 /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = ../../../../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.1.13.0.dylib; sourceTree = "<group>"; };
+		B148EEE11C8DA2A2004C58FA /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		B148EEE21C8DA2A2004C58FA /* Entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		B148EEE71C8DBE8D004C58FA /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		B148EEE81C8DBE8D004C58FA /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		B148EEEA1C8DC2E7004C58FA /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		B16019EB1C8DD47C004C0E6B /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		B16019EC1C8DD47C004C0E6B /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		B17EC6E11C9C972400F4D469 /* GuiRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiRenderer.cpp; sourceTree = "<group>"; };
+		B17EC6E21C9C972400F4D469 /* GuiRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GuiRenderer.hpp; sourceTree = "<group>"; };
+		B189591B1C99F7EB00A5E0E9 /* Crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crosshair.png; sourceTree = "<group>"; };
+		B18959201C99F9C400A5E0E9 /* GUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUI.cpp; sourceTree = "<group>"; };
+		B18959211C99F9C400A5E0E9 /* GUI.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GUI.hpp; sourceTree = "<group>"; };
+		B18959231C9A068200A5E0E9 /* GUIShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GUIShader.fs; sourceTree = "<group>"; };
+		B18959241C9A068200A5E0E9 /* GUIShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = GUIShader.vs; sourceTree = "<group>"; };
+		B1B86BFD1C92E2550060266E /* MousePicker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MousePicker.cpp; sourceTree = "<group>"; };
+		B1B86BFE1C92E2550060266E /* MousePicker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MousePicker.hpp; sourceTree = "<group>"; };
+		B1C83D421C8B3153006074BF /* Utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		B1C8C50B1C8A4DFD00B87C32 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		B1C8C50C1C8A4DFD00B87C32 /* Model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Model.hpp; sourceTree = "<group>"; };
+		B1C8C5151C8A6D2C00B87C32 /* ModelShader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelShader.fs; sourceTree = "<group>"; };
+		B1C8C5161C8A6D2C00B87C32 /* ModelShader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ModelShader.vs; sourceTree = "<group>"; };
+		B1E0FD001C8E2CAA00F0AC21 /* Crate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crate.png; sourceTree = "<group>"; };
+		B1E0FD011C8E2CAA00F0AC21 /* Wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wood.png; sourceTree = "<group>"; };
+		B1E0FD051C8E51F000F0AC21 /* Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loader.cpp; sourceTree = "<group>"; };
+		B1E0FD061C8E51F000F0AC21 /* Loader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Loader.hpp; sourceTree = "<group>"; };
+		B1E15EDE1C8CCEF60007E579 /* Templates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Templates.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13165AB1C94E78000F0E5F9 /* libGLEW.1.13.0.dylib in Frameworks */,
+				B13165A91C94E74C00F0E5F9 /* libfreeimage.3.17.0.dylib in Frameworks */,
+				B11C03A11C89F11B00E4ED7A /* libglfw3.3.1.dylib in Frameworks */,
+				B11AD9AA1C8AFDB700B1804D /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,7 +96,9 @@
 		B11C03811C89F09B00E4ED7A = {
 			isa = PBXGroup;
 			children = (
+				B11C03A21C89F13B00E4ED7A /* Frameworks */,
 				B11C038C1C89F09B00E4ED7A /* Game */,
+				B11C03901C89F09B00E4ED7A /* Supporting Files */,
 				B11C038B1C89F09B00E4ED7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +114,13 @@
 		B11C038C1C89F09B00E4ED7A /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				B11C038D1C89F09B00E4ED7A /* AppDelegate.h */,
-				B11C038E1C89F09B00E4ED7A /* AppDelegate.m */,
-				B11C03931C89F09B00E4ED7A /* Assets.xcassets */,
-				B11C03951C89F09B00E4ED7A /* MainMenu.xib */,
-				B11C03981C89F09B00E4ED7A /* Info.plist */,
-				B11C03901C89F09B00E4ED7A /* Supporting Files */,
+				B1B86BFC1C92E1FE0060266E /* Core */,
+				B1B86BFB1C92E1DE0060266E /* Render */,
+				B1B86BFA1C92E1C60060266E /* Entities */,
+				B12323D51C9036E7008671F7 /* Models */,
+				B1E15EDD1C8CCED90007E579 /* Tools */,
+				B1C8C5141C8A6B5800B87C32 /* Shaders */,
+				B1E0FD041C8E2CB300F0AC21 /* Images */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -66,9 +128,105 @@
 		B11C03901C89F09B00E4ED7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B11C03911C89F09B00E4ED7A /* main.m */,
+				B11C03981C89F09B00E4ED7A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B11C03A21C89F13B00E4ED7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B13165A81C94E74C00F0E5F9 /* libfreeimage.3.17.0.dylib */,
+				B11C03A01C89F11B00E4ED7A /* libglfw3.3.1.dylib */,
+				B13165AA1C94E78000F0E5F9 /* libGLEW.1.13.0.dylib */,
+				B11AD9A91C8AFDB700B1804D /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B12323D51C9036E7008671F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8C50B1C8A4DFD00B87C32 /* Model.cpp */,
+				B1C8C50C1C8A4DFD00B87C32 /* Model.hpp */,
+				B12323D61C903738008671F7 /* Block.cpp */,
+				B12323D71C903738008671F7 /* Block.hpp */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B1B86BFA1C92E1C60060266E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B148EEE11C8DA2A2004C58FA /* Entity.cpp */,
+				B148EEE21C8DA2A2004C58FA /* Entity.hpp */,
+				B16019EB1C8DD47C004C0E6B /* Camera.cpp */,
+				B16019EC1C8DD47C004C0E6B /* Camera.hpp */,
+				B18959201C99F9C400A5E0E9 /* GUI.cpp */,
+				B18959211C99F9C400A5E0E9 /* GUI.hpp */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B1B86BFB1C92E1DE0060266E /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				B1003D921C89FC9F000CCAC8 /* DisplayManager.cpp */,
+				B1003D931C89FC9F000CCAC8 /* DisplayManager.hpp */,
+				B148EEE71C8DBE8D004C58FA /* Renderer.cpp */,
+				B148EEE81C8DBE8D004C58FA /* Renderer.hpp */,
+				B17EC6E11C9C972400F4D469 /* GuiRenderer.cpp */,
+				B17EC6E21C9C972400F4D469 /* GuiRenderer.hpp */,
+				B1E0FD051C8E51F000F0AC21 /* Loader.cpp */,
+				B1E0FD061C8E51F000F0AC21 /* Loader.hpp */,
+			);
+			name = Render;
+			sourceTree = "<group>";
+		};
+		B1B86BFC1C92E1FE0060266E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B11C039E1C89F0D400E4ED7A /* Game.cpp */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B1C8C5141C8A6B5800B87C32 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				B11AD9AB1C8B041500B1804D /* Shader.cpp */,
+				B11AD9AC1C8B041500B1804D /* Shader.hpp */,
+				B1C8C5151C8A6D2C00B87C32 /* ModelShader.fs */,
+				B1C8C5161C8A6D2C00B87C32 /* ModelShader.vs */,
+				B18959231C9A068200A5E0E9 /* GUIShader.fs */,
+				B18959241C9A068200A5E0E9 /* GUIShader.vs */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		B1E0FD041C8E2CB300F0AC21 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B189591B1C99F7EB00A5E0E9 /* Crosshair.png */,
+				B1E0FD001C8E2CAA00F0AC21 /* Crate.png */,
+				B1E0FD011C8E2CAA00F0AC21 /* Wood.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B1E15EDD1C8CCED90007E579 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B1C83D421C8B3153006074BF /* Utils.hpp */,
+				B148EEEA1C8DC2E7004C58FA /* Utils.cpp */,
+				B1E15EDE1C8CCEF60007E579 /* Templates.hpp */,
+				B1B86BFD1C92E2550060266E /* MousePicker.cpp */,
+				B1B86BFE1C92E2550060266E /* MousePicker.hpp */,
+				B1298F9D1C9357D200F43064 /* Ray.cpp */,
+				B1298F9E1C9357D200F43064 /* Ray.hpp */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +286,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11C03941C89F09B00E4ED7A /* Assets.xcassets in Resources */,
-				B11C03971C89F09B00E4ED7A /* MainMenu.xib in Resources */,
+				B1E0FD031C8E2CAA00F0AC21 /* Wood.png in Resources */,
+				B1C8C5181C8A6D2C00B87C32 /* ModelShader.vs in Resources */,
+				B1E0FD021C8E2CAA00F0AC21 /* Crate.png in Resources */,
+				B189591C1C99F7EB00A5E0E9 /* Crosshair.png in Resources */,
+				B18959261C9A068200A5E0E9 /* GUIShader.vs in Resources */,
+				B1C8C5171C8A6D2C00B87C32 /* ModelShader.fs in Resources */,
+				B18959251C9A068200A5E0E9 /* GUIShader.fs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +303,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11C03921C89F09B00E4ED7A /* main.m in Sources */,
-				B11C038F1C89F09B00E4ED7A /* AppDelegate.m in Sources */,
+				B17EC6E31C9C972400F4D469 /* GuiRenderer.cpp in Sources */,
+				B1298F9F1C9357D200F43064 /* Ray.cpp in Sources */,
+				B148EEE91C8DBE8D004C58FA /* Renderer.cpp in Sources */,
+				B1E0FD071C8E51F000F0AC21 /* Loader.cpp in Sources */,
+				B11AD9AD1C8B041500B1804D /* Shader.cpp in Sources */,
+				B148EEEB1C8DC2E7004C58FA /* Utils.cpp in Sources */,
+				B12323D81C903738008671F7 /* Block.cpp in Sources */,
+				B1B86BFF1C92E2550060266E /* MousePicker.cpp in Sources */,
+				B1003D941C89FC9F000CCAC8 /* DisplayManager.cpp in Sources */,
+				B18959221C99F9C400A5E0E9 /* GUI.cpp in Sources */,
+				B16019ED1C8DD47C004C0E6B /* Camera.cpp in Sources */,
+				B11C039F1C89F0D400E4ED7A /* Game.cpp in Sources */,
+				B148EEE31C8DA2A2004C58FA /* Entity.cpp in Sources */,
+				B1C8C50D1C8A4DFD00B87C32 /* Model.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B11C03951C89F09B00E4ED7A /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B11C03961C89F09B00E4ED7A /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B11C03991C89F09B00E4ED7A /* Debug */ = {
@@ -241,10 +405,16 @@
 		B11C039C1C89F09B00E4ED7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+					/usr/local/Cellar/freeimage/3.17.0/lib,
+					/usr/local/Cellar/glew/1.13.0/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pepeapps.Game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -253,10 +423,16 @@
 		B11C039D1C89F09B00E4ED7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/lib,
+					/usr/local/Cellar/freeimage/3.17.0/lib,
+					/usr/local/Cellar/glew/1.13.0/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pepeapps.Game;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -281,6 +457,7 @@
 				B11C039D1C89F09B00E4ED7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
