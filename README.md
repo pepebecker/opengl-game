@@ -1,3 +1,3 @@
-# opengl-game
-A small C++ OpenGL game.
+# OpenGL Game
+A small 3D game written in C++ using GLFW3.
 
