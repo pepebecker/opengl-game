@@ -175,7 +175,7 @@ int main(int argc, const char *argv[]) {
     
     buildWorld();
     
-    entities.push_back(new Entity(new Block(), crateTexture, glm::vec3(10, 5, 10), glm::vec3(0, 45, 0), 1));
+//    entities.push_back(new Entity(new Block(), crateTexture, glm::vec3(10, 5, 10), glm::vec3(0, 45, 0), 1));
     
     Camera *camera = new Camera(glm::vec3(world_width / 2, world_height / 2, world_lenght / 2 + 10), glm::vec3(0));
     
